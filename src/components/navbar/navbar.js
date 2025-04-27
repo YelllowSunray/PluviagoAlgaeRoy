@@ -12,6 +12,7 @@ export default function Navbar() {
     { name: 'Home', href: '/' },
     { name: 'Incoming', href: '/incoming' },
     { name: 'Outgoing', href: '/outgoing' },
+    { name: 'Inventory', href: '/inventory' },
   ];
 
   const isActive = (path) => pathname === path;

@@ -131,97 +131,123 @@ const IncomingDetails = () => {
       <div className="mb-6 p-4 border rounded">
         <h3 className="text-xl font-semibold mb-2">Add New Detail</h3>
         <div className="grid grid-cols-2 gap-4">
-          <input
-            type="text"
-            placeholder="S.No"
-            value={newDetail['S.No']}
-            onChange={(e) => setNewDetail({ ...newDetail, 'S.No': e.target.value })}
-            className="border p-2 rounded"
-          />
-          <input
-            type="text"
-            placeholder="Product Name"
-            value={newDetail['Product Name']}
-            onChange={(e) => setNewDetail({ ...newDetail, 'Product Name': e.target.value })}
-            className="border p-2 rounded"
-          />
-          <input
-            type="text"
-            placeholder="Product Code"
-            value={newDetail['Product code']}
-            onChange={(e) => setNewDetail({ ...newDetail, 'Product code': e.target.value })}
-            className="border p-2 rounded"
-          />
-          <input
-            type="text"
-            placeholder="Manufacturer Name"
-            value={newDetail['Manufacturer name']}
-            onChange={(e) => setNewDetail({ ...newDetail, 'Manufacturer name': e.target.value })}
-            className="border p-2 rounded"
-          />
-          <input
-            type="date"
-            placeholder="Mfg Date"
-            value={newDetail['Mfg.Date']}
-            onChange={(e) => setNewDetail({ ...newDetail, 'Mfg.Date': e.target.value })}
-            className="border p-2 rounded"
-          />
-          <input
-            type="date"
-            placeholder="Expiry Date"
-            value={newDetail['Expiry Date']}
-            onChange={(e) => setNewDetail({ ...newDetail, 'Expiry Date': e.target.value })}
-            className="border p-2 rounded"
-          />
-          <input
-            type="text"
-            placeholder="Quantity Received"
-            value={newDetail['Qty. Received']}
-            onChange={(e) => setNewDetail({ ...newDetail, 'Qty. Received': e.target.value })}
-            className="border p-2 rounded"
-          />
-          <input
-            type="date"
-            placeholder="Received Date"
-            value={newDetail['Received Date']}
-            onChange={(e) => setNewDetail({ ...newDetail, 'Received Date': e.target.value })}
-            className="border p-2 rounded"
-          />
-        <input
-          type="text"
-            placeholder="Invoice No"
-            value={newDetail['Invoice no:']}
-            onChange={(e) => setNewDetail({ ...newDetail, 'Invoice no:': e.target.value })}
-            className="border p-2 rounded"
-          />
-          <input
-            type="date"
-            placeholder="Invoice Date"
-            value={newDetail['Invoice date ']}
-            onChange={(e) => setNewDetail({ ...newDetail, 'Invoice date ': e.target.value })}
-            className="border p-2 rounded"
-        />
-        <input
-            type="text"
-            placeholder="Sample Type"
-            value={newDetail['Sample Type ']}
-            onChange={(e) => setNewDetail({ ...newDetail, 'Sample Type ': e.target.value })}
-            className="border p-2 rounded"
-          />
-          <input
-            type="text"
-            placeholder="Sample Received From"
-            value={newDetail['Sample Received From']}
-            onChange={(e) => setNewDetail({ ...newDetail, 'Sample Received From': e.target.value })}
-            className="border p-2 rounded"
-          />
-          <input
-            type="text"
-            placeholder="Comment"
-            value={newDetail['Comment']}
-            onChange={(e) => setNewDetail({ ...newDetail, 'Comment': e.target.value })}
-            className="border p-2 rounded"
-          />
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">S.No</label>
+            <input
+              type="text"
+              value={newDetail['S.No']}
+              onChange={(e) => setNewDetail({ ...newDetail, 'S.No': e.target.value })}
+              className="border p-2 rounded w-full"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Product Name</label>
+            <input
+              type="text"
+              value={newDetail['Product Name']}
+              onChange={(e) => setNewDetail({ ...newDetail, 'Product Name': e.target.value })}
+              className="border p-2 rounded w-full"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Product Code</label>
+            <input
+              type="text"
+              value={newDetail['Product code']}
+              onChange={(e) => setNewDetail({ ...newDetail, 'Product code': e.target.value })}
+              className="border p-2 rounded w-full"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Manufacturer Name</label>
+            <input
+              type="text"
+              value={newDetail['Manufacturer name']}
+              onChange={(e) => setNewDetail({ ...newDetail, 'Manufacturer name': e.target.value })}
+              className="border p-2 rounded w-full"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Manufacturing Date</label>
+            <input
+              type="date"
+              value={newDetail['Mfg.Date']}
+              onChange={(e) => setNewDetail({ ...newDetail, 'Mfg.Date': e.target.value })}
+              className="border p-2 rounded w-full"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Expiry Date</label>
+            <input
+              type="date"
+              value={newDetail['Expiry Date']}
+              onChange={(e) => setNewDetail({ ...newDetail, 'Expiry Date': e.target.value })}
+              className="border p-2 rounded w-full"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Quantity Received</label>
+            <input
+              type="text"
+              value={newDetail['Qty. Received']}
+              onChange={(e) => setNewDetail({ ...newDetail, 'Qty. Received': e.target.value })}
+              className="border p-2 rounded w-full"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Date Received</label>
+            <input
+              type="date"
+              value={newDetail['Received Date']}
+              onChange={(e) => setNewDetail({ ...newDetail, 'Received Date': e.target.value })}
+              className="border p-2 rounded w-full"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Invoice No</label>
+            <input
+              type="text"
+              value={newDetail['Invoice no:']}
+              onChange={(e) => setNewDetail({ ...newDetail, 'Invoice no:': e.target.value })}
+              className="border p-2 rounded w-full"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Invoice Date</label>
+            <input
+              type="date"
+              value={newDetail['Invoice date ']}
+              onChange={(e) => setNewDetail({ ...newDetail, 'Invoice date ': e.target.value })}
+              className="border p-2 rounded w-full"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Sample Type</label>
+            <input
+              type="text"
+              value={newDetail['Sample Type ']}
+              onChange={(e) => setNewDetail({ ...newDetail, 'Sample Type ': e.target.value })}
+              className="border p-2 rounded w-full"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Sample Received From</label>
+            <input
+              type="text"
+              value={newDetail['Sample Received From']}
+              onChange={(e) => setNewDetail({ ...newDetail, 'Sample Received From': e.target.value })}
+              className="border p-2 rounded w-full"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Comment</label>
+            <input
+              type="text"
+              value={newDetail['Comment']}
+              onChange={(e) => setNewDetail({ ...newDetail, 'Comment': e.target.value })}
+              className="border p-2 rounded w-full"
+            />
+          </div>
         </div>
         <button 
           onClick={addDetail}
@@ -324,10 +350,11 @@ const IncomingDetails = () => {
               />
               <input
                 type="date"
-                placeholder="Mfg Date"
+                placeholder="Manufacturing Date"
                 value={editDetail['Mfg.Date']}
                 onChange={(e) => setEditDetail({ ...editDetail, 'Mfg.Date': e.target.value })}
                 className="border p-2 rounded"
+                title="Manufacturing Date"
               />
               <input
                 type="date"
@@ -335,6 +362,7 @@ const IncomingDetails = () => {
                 value={editDetail['Expiry Date']}
                 onChange={(e) => setEditDetail({ ...editDetail, 'Expiry Date': e.target.value })}
                 className="border p-2 rounded"
+                title="Expiry Date"
               />
               <input
                 type="text"
@@ -345,10 +373,11 @@ const IncomingDetails = () => {
               />
               <input
                 type="date"
-                placeholder="Received Date"
+                placeholder="Date Received"
                 value={editDetail['Received Date']}
                 onChange={(e) => setEditDetail({ ...editDetail, 'Received Date': e.target.value })}
                 className="border p-2 rounded"
+                title="Date Received"
               />
               <input
                 type="text"
@@ -363,6 +392,7 @@ const IncomingDetails = () => {
                 value={editDetail['Invoice date ']}
                 onChange={(e) => setEditDetail({ ...editDetail, 'Invoice date ': e.target.value })}
                 className="border p-2 rounded"
+                title="Invoice Date"
               />
               <input
                 type="text"
